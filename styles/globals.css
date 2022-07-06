@@ -1,0 +1,120 @@
+@font-face {
+  font-family: Sofia;
+  src: url("/font/sofia-pro-cdnfonts/Sofia Pro Regular Az.otf");
+}
+
+@font-face {
+  font-family: Sofia;
+  src: url("/font/sofia-pro-cdnfonts/Sofia Pro Black Az.otf");
+  font-weight: 900;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Sofia";
+  color: #000b33;
+}
+
+* {
+  transition: all 0.3s;
+}
+
+*:hover,
+*:active,
+*:focus {
+  outline: 0;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+  font-weight: bold;
+}
+
+.blog-content p {
+  opacity: 0.7;
+  margin: 1.5em auto;
+}
+
+.course-text p {
+  padding-bottom: 2em;
+  text-align: justify;
+}
+
+.html-list ul,
+ul.html-list {
+  list-style-type: disc;
+}
+
+.html-list li {
+  margin: 1em;
+}
+
+.html-list ul li {
+  margin: 2em;
+}
+
+select {
+  width: 100%;
+  background-color: #e8f0ff;
+  height: 56px;
+  border-radius: 4px;
+  padding: 0px 8px;
+}
+
+.payment-btn{
+  background-color: rgb(255, 222, 0);
+  /* border-radius: 7px; */
+  width: 100px;
+  height: 35px;
+  margin-top: 20px;
+}
+.pay-now-cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shaper-clipped-triange-top {
+  -webkit-clip-path: polygon(
+    37% 0,
+    28% 9%,
+    100% 0,
+    100% 98%,
+    50% 100%,
+    0 100%,
+    0 0
+  );
+  clip-path: polygon(37% 0, 28% 9%, 100% 0, 100% 98%, 50% 100%, 0 100%, 0 0);
+}
+
+.course-detail {
+  flex: 0 0 50%;
+  background: #010a33;
+  padding: 20px 40px;
+}
+
+.payment-detail {
+  flex: 0 0 40%;
+}
+
+
+
+.swiper-button-next, .swiper-button-prev {
+  background-color: #FFDD00;
+  padding: 2em;
+  border-radius: 100%;
+  color: black;
+}
